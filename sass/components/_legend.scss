@@ -1,0 +1,95 @@
+.legend {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  min-height: 400px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #2f303a;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/legend-img/legend-img-mob-x1.jpg);
+  padding: 200px 0px;
+
+  @media screen and (min-width: 480px) {
+    max-width: 480px;
+  }
+
+  @media screen and (min-width: 768px) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/legend-img/legend-img-tab-x1.jpg);
+    max-width: 768px;
+    height: 400px;
+    background-size: cover;
+  }
+
+  @media screen and (min-width: 1200px) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/legend-img/legend-img-desc-x1.jpg);
+    min-height: 600px;
+    max-width: 1600px;
+  }
+  background-position: 50% 0;
+  margin-bottom: 60px;
+}
+
+.legend__container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  // max-width: 480px;
+  height: auto;
+  padding-top: 118px 60px;
+}
+
+.legend__title {
+  // width: 696px;
+
+  padding-bottom: 30px;
+  padding-left: auto;
+  padding-right: auto;
+  // margin-left: auto;
+  // margin-right: auto;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.6;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #ffffff;
+  // margin-bottom: 40px;
+}
+
+.legend__button {
+  display: block;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.6;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  background: #2196f3;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 32px;
+  min-width: 200px;
+  height: 50px;
+  border-radius: 4px;
+}

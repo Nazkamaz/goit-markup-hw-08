@@ -1,0 +1,102 @@
+.contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  @media screen and (min-width: 768px) {
+    padding-left: 84px;
+    padding-right: 15px;
+    align-items: flex-start;
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    margin-left: auto;
+  }
+}
+// .contacts__item:not(:first-child) {
+//   margin-left: 50px;
+// }
+
+// .icon-mail {
+//   fill: currentColor;
+//   width: 16px;
+//   height: 12px;
+//   margin-right: 10px;
+// }
+
+// .icon-phone {
+// }
+
+.contacts__icon {
+  fill: currentColor;
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  .contacts__link:hover &,
+  .contacts__link:focus & {
+    fill: var(--accent-color);
+  }
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
+}
+
+.contacts__link--tel {
+  display: flex;
+  width: auto;
+  height: auto;
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+  align-items: center;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+  @media screen and (min-width: 768px) {
+    font-size: 12px;
+    line-height: 1.17;
+    color: #757575;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-left: 30px;
+  }
+}
+
+.contacts__link--mail {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: #757575;
+  @media screen and (min-width: 768px) {
+    font-size: 12px;
+    line-height: 1.17;
+    color: #757575;
+  }
+}
+
+.contacts__link {
+  display: flex;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    font-size: 14px;
+    line-height: 1.17;
+    color: #757575;
+  }
+}
+
+.contacts__item {
+  padding-bottom: 32px;
+  @media screen and (min-width: 768px) {
+    padding-bottom: 10px;
+  }
+}
