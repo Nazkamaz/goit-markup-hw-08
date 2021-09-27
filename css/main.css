@@ -1379,13 +1379,6 @@ a:hover, a:focus {
   margin-left: 10px;
 }
 
-.galery {
-  max-width: 480px;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-bottom: 40px;
-}
-
 .filter__item {
   margin-left: 8px;
   margin-bottom: 15px;
@@ -1421,6 +1414,8 @@ a:hover, a:focus {
   flex-wrap: wrap;
   margin-top: 60px;
   margin-left: -8px;
+  margin-bottom: 40px;
+  margin-left: 15px;
 }
 
 @media screen and (min-width: 786px) {
@@ -1429,16 +1424,6 @@ a:hover, a:focus {
     justify-content: center;
     align-items: baseline;
   }
-}
-
-.galery__list {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 50px;
-}
-
-.galery {
-  max-width: 480px;
 }
 
 @media screen and (min-width: 786px) {
@@ -1450,6 +1435,35 @@ a:hover, a:focus {
 @media screen and (min-width: 1200px) {
   .galery {
     width: 1200px;
+  }
+}
+
+.galery__list {
+  margin: 15px;
+}
+
+@media screen and (min-width: 786px) {
+  .galery__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+}
+
+.galery__item {
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 786px) {
+  .galery__item {
+    margin: 15px;
+    flex-basis: calc((100% - 60px) / 2);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .galery__item {
+    flex-basis: calc((100% - 90px) / 3);
   }
 }
 
@@ -1475,23 +1489,6 @@ a:hover, a:focus {
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
   margin-top: 4px;
-}
-
-.galery__item {
-  max-width: 450px;
-  display: flex;
-  margin-bottom: 30px;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-@media screen and (min-width: 786px) {
-  .galery__item {
-    width: 354px;
-  }
-}
-
-.galery__item:hover, .galery__item:focus {
-  border-color: var(--accent-color);
 }
 
 .project {
@@ -1536,12 +1533,5 @@ a:hover, a:focus {
 .galery__card {
   overflow: hidden;
   position: relative;
-}
-
-.galery__list {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
 }
 /*# sourceMappingURL=main.css.map */
