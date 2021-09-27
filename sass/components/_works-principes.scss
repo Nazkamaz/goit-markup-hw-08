@@ -51,7 +51,6 @@
   align-items: center;
   justify-content: center;
   @media screen and (min-width: 768px) {
-    max-width: 768px;
     flex-direction: row;
     flex-wrap: wrap;
     margin-left: 15px;
@@ -62,27 +61,17 @@
   }
   @media screen and (min-width: 1200px) {
     max-width: 1200px;
-    margin-left: 15px;
-    margin-right: 15px;
   }
 }
 
 .about-us__item {
   margin-left: 15px;
   margin-right: 15px;
-  max-width: 450px;
   margin-bottom: 30px;
   @media screen and (min-width: 768px) {
-    width: calc((100% / 2) - 60px);
-    max-width: 354px;
-    min-height: 251px;
+    flex-basis: calc((100% - 60px) / 2);
   }
   @media screen and (min-width: 1200px) {
-    width: calc((100% / 4) - 90px);
+    flex-basis: calc((100% - 120px) / 4);
   }
-  // max-width: 450px;
-  //   width: 270px;
-  //   &:not(:first-child) {
-  //     margin-left: 30px;
-  //   }
 }
