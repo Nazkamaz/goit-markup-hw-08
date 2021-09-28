@@ -292,7 +292,7 @@ a:hover, a:focus {
     flex-direction: row;
     justify-content: center;
     align-items: flex-end;
-    margin-left: auto;
+    margin-left: 84px;
   }
 }
 
