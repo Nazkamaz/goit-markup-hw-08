@@ -30,17 +30,12 @@ button {
 
 .container {
   width: 100%;
-  padding: 0;
+  padding: 0px 15px;
   margin: 0 auto;
-  // max-width: 480px;
-  // @media screen and (min-width: 768px) {
-  //   max-width: 768px;
-  // }
-  // @media screen and (min-width: 1200px) {
-  //   max-width: 1200px;
-  // }
 }
-
+.section {
+  padding: 94px 0;
+}
 p,
 h1,
 h2,

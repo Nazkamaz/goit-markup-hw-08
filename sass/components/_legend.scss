@@ -1,8 +1,8 @@
 .legend {
-  display: block;
+  display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
+  // position: relative;
   width: 100%;
   min-height: 400px;
   background-repeat: no-repeat;
@@ -14,11 +14,11 @@
       rgba(47, 48, 58, 0.4)
     ),
     url(../images/legend-img/legend-img-mob-x1.jpg);
-  padding: 200px 0px;
+  padding: 118px 0px;
 
-  @media screen and (min-width: 480px) {
-    max-width: 480px;
-  }
+  // @media screen and (min-width: 480px) {
+  //   max-width: 480px;
+  // }
 
   @media screen and (min-width: 768px) {
     background-image: linear-gradient(
@@ -43,7 +43,7 @@
     max-width: 1600px;
   }
   background-position: 50% 0;
-  margin-bottom: 60px;
+  // margin-bottom: 60px;
 }
 
 .legend__container {
@@ -51,16 +51,16 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  // // position: absolute;
+  // top: 50%;
+  // left: 50%;
+  // transform: translate(-50%, -50%);
   height: auto;
-  padding-top: 118px 60px;
+  padding: 118px 60px;
 }
 
 .legend__title {
-  padding-bottom: 30px;
+  margin-bottom: 30px;
   padding-left: auto;
   padding-right: auto;
   font-weight: 900;

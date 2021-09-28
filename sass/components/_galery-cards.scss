@@ -1,6 +1,6 @@
 .galery {
-  @media screen and (min-width: 786px) {
-    width: 786px;
+  @media screen and (min-width: 768px) {
+    width: 768px;
   }
   @media screen and (min-width: 1200px) {
     width: 1200px;
@@ -8,18 +8,16 @@
 }
 
 .galery__list {
-  margin: 15px;
-  @media screen and (min-width: 786px) {
+  margin: -15px;
+  @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
-    margin: -15px;
   }
 }
 
 .galery__item {
-  margin-bottom: 30px;
-  @media screen and (min-width: 786px) {
-    margin: 15px;
+  margin: 15px;
+  @media screen and (min-width: 768px) {
     flex-basis: calc((100% - 60px) / 2);
   }
   @media screen and (min-width: 1200px) {
