@@ -169,12 +169,13 @@ a:hover, a:focus {
 .mob-menu__list {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: flex-start;
 }
 
 .mob-menu {
   position: fixed;
+  overflow: auto;
   top: 0;
   left: 0;
   width: 100vw;
@@ -316,6 +317,13 @@ a:hover, a:focus {
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
+}
+
+@media screen and (max-width: 767px) {
+  .contacts {
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
 }
 
 @media screen and (min-width: 768px) {

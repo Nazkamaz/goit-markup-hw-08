@@ -29,12 +29,13 @@
 .mob-menu__list {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: flex-start;
 }
 
 .mob-menu {
   position: fixed;
+  overflow: auto;
   top: 0;
   left: 0;
   width: 100vw;

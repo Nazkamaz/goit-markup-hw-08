@@ -3,6 +3,10 @@
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
+  @media screen and (max-width: 767px) {
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
   @media screen and (min-width: 768px) {
     margin-left: 84px;
     align-items: flex-start;
