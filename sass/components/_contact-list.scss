@@ -1,21 +1,20 @@
 .contacts {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
   align-items: center;
+
   @media screen and (max-width: 767px) {
     justify-content: flex-start;
     align-items: flex-start;
   }
   @media screen and (min-width: 768px) {
-    margin-left: 84px;
     align-items: flex-start;
+    margin-left: auto;
   }
 
   @media screen and (min-width: 1200px) {
+    display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: flex-end;
+    align-items: baseline;
   }
 }
 // .contacts__item:not(:first-child) {
@@ -97,8 +96,14 @@
 }
 
 .contacts__item {
-  padding-bottom: 32px;
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 32px;
+    }
+  }
   @media screen and (min-width: 768px) {
-    padding-bottom: 10px;
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
   }
 }
