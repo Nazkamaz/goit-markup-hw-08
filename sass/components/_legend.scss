@@ -6,25 +6,21 @@
   background-size: cover;
   background-color: #2f303a;
   background-position: 50% 0;
-
-  @media screen and (min-width: 1200px) {
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/legend-img/legend-img-mob-x1.jpg);
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
     background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../images/legend-img/legend-img-desc-x1.jpg);
-    @media screen and (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: linear-gradient(
-          to right,
-          rgba(47, 48, 58, 0.4),
-          rgba(47, 48, 58, 0.4)
-        ),
-        url(../images/legend-img/legend-img-desc-x2.jpg);
-    }
-    // min-width: 1200px;
+      url(../images/legend-img/legend-img-mob-x2.jpg);
   }
 
   @media screen and (min-width: 768px) {
@@ -46,14 +42,14 @@
     }
   }
 
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 1200px) {
     background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../images/legend-img/legend-img-mob-x1.jpg);
-    @media (min-device-pixel-ratio: 2),
+      url(../images/legend-img/legend-img-desc-x1.jpg);
+    @media screen and (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
       background-image: linear-gradient(
@@ -61,10 +57,29 @@
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url(../images/legend-img/legend-img-mob-x2.jpg);
+        url(../images/legend-img/legend-img-desc-x2.jpg);
     }
   }
 }
+
+// @media screen and (min-width: 480px) {
+//   background-image: linear-gradient(
+//       to right,
+//       rgba(47, 48, 58, 0.4),
+//       rgba(47, 48, 58, 0.4)
+//     ),
+//     url(../images/legend-img/legend-img-mob-x1.jpg);
+//   @media (min-device-pixel-ratio: 2),
+//     (min-resolution: 192dpi),
+//     (min-resolution: 2dppx) {
+//     background-image: linear-gradient(
+//         to right,
+//         rgba(47, 48, 58, 0.4),
+//         rgba(47, 48, 58, 0.4)
+//       ),
+//       url(../images/legend-img/legend-img-mob-x2.jpg);
+//   }
+// }
 
 .legend__title {
   // width: 360px;
