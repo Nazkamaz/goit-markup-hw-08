@@ -1153,12 +1153,13 @@ a:hover, a:focus {
   .footer__container {
     width: 1200px;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: baseline;
   }
 }
 
 .footers__contacts {
+  width: 100%;
   text-decoration: none;
 }
 
@@ -1181,12 +1182,14 @@ a:hover, a:focus {
 @media screen and (min-width: 1200px) {
   .footer-contacts_and-social {
     margin-bottom: 0px;
+    margin-right: auto;
   }
 }
 
 .footer-contacts__block {
   flex-grow: 1;
   display: flex;
+  width: 100%;
   flex-direction: column;
   align-items: center;
 }
@@ -1252,6 +1255,7 @@ a:hover, a:focus {
 
 .footer__contacts {
   font-style: normal;
+  width: 100%;
 }
 
 .footer-contacts__list {
@@ -1268,10 +1272,12 @@ a:hover, a:focus {
 }
 
 .footer-contacts__list li:not(:last-child) {
-  padding-bottom: 9px;
+  margin-bottom: 9px;
 }
 
 .location {
+  display: block;
+  flex-wrap: nowrap;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -1372,8 +1378,11 @@ a:hover, a:focus {
 
 @media screen and (min-width: 1200px) {
   .subscribing__block {
-    margin-left: 93px;
+    margin-left: auto;
+    justify-content: flex-start;
     align-items: flex-start;
+    margin-left: auto;
+    margin-left: 185px;
   }
 }
 
@@ -1432,12 +1441,14 @@ a:hover, a:focus {
 @media screen and (min-width: 768px) {
   .subscribing__input {
     width: 450px;
+    margin-bottom: 20px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .subscribing__input {
     width: 358px;
+    margin-bottom: 0px;
   }
 }
 
