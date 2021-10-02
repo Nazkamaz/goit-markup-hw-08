@@ -68,7 +68,6 @@
     color: #757575;
   }
   @media screen and (min-width: 1200px) {
-    padding-left: 30px;
   }
 }
 
@@ -104,6 +103,12 @@
   @media screen and (min-width: 768px) {
     &:not(:last-child) {
       margin-bottom: 10px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    &:not(:first-child) {
+      margin-left: 30px;
+      margin-bottom: 0;
     }
   }
 }
