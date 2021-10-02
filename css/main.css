@@ -1203,6 +1203,7 @@ a:hover, a:focus {
 @media screen and (min-width: 1200px) {
   .footer-contacts__block {
     align-items: flex-start;
+    width: 145px;
   }
 }
 
@@ -1277,6 +1278,7 @@ a:hover, a:focus {
 
 .location {
   display: block;
+  width: 100%;
   flex-wrap: nowrap;
   font-size: 14px;
   line-height: 1.71;
@@ -1358,13 +1360,6 @@ a:hover, a:focus {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 20px;
-}
-
-.footer-contacts__blocks {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 .subscribing__block {

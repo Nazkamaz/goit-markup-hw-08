@@ -50,8 +50,17 @@
   }
   @media screen and (min-width: 1200px) {
     align-items: flex-start;
+    width: 145px;
   }
 }
+
+// .footer-contacts__blocks {
+//   width: 195px;
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   align-items: center;
+// }
 
 .location {
   font-size: 14px;
@@ -117,6 +126,7 @@
 }
 .location {
   display: block;
+  width: 100%;
   flex-wrap: nowrap;
   font-size: 14px;
   line-height: 1.71;
@@ -189,13 +199,6 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 20px;
-}
-
-.footer-contacts__blocks {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 .subscribing__block {
